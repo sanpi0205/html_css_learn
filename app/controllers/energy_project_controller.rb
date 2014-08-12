@@ -9,5 +9,10 @@ class EnergyProjectController < ApplicationController
 		(1..1).each do |i|
 			@xxx[i] = sheet1.row(i).to_a
 		end
+		@projects = Project.all
+	end
+
+	def index
+		
 	end
 end

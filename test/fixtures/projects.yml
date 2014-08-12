@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  title: MyString
+  capacity: 1.5
+  generation: 1.5
+  power_category: MyString
+  location: MyString
+  longitude: 1.5
+  latitude: 1.5
+
+two:
+  title: MyString
+  capacity: 1.5
+  generation: 1.5
+  power_category: MyString
+  location: MyString
+  longitude: 1.5
+  latitude: 1.5

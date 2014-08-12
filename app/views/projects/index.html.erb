@@ -1,0 +1,40 @@
+<h1>Listing projects</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Capacity</th>
+      <th>Generation</th>
+      <th>Power category</th>
+      <th>Location</th>
+      <th>Longitude</th>
+      <th>Latitude</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @projects.each do |project| %>
+      <tr>
+        <td><%= project.title %></td>
+        <td><%= project.capacity %></td>
+        <td><%= project.generation %></td>
+        <td><%= project.power_category %></td>
+        <td><%= project.location %></td>
+        <td><%= project.longitude %></td>
+        <td><%= project.latitude %></td>
+        <td><%= link_to 'Show', project %></td>
+        <td><%= link_to 'Edit', edit_project_path(project) %></td>
+        <td><%= link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Project', new_project_path %>
+<h3> <%= link_to 'energy project','/energy_project/info' %> </h3>

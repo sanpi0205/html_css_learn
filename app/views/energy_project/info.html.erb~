@@ -9,4 +9,6 @@
 		<input type="submit" value="提交">
 	</fieldset>
 </form>
-
+<% @projects.each do |p| %>
+<p><%= p. %></p>
+<% end %>

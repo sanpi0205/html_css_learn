@@ -1,4 +1,9 @@
 HtmlCssLearn::Application.routes.draw do
+
+  resources :projects
+  
+
+  get "energy_project" => "energy_project#index"
   get "energy_project/info" => "energy_project#info"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
