@@ -1,0 +1,12 @@
+<h2>this is the test checkbox</h2>
+<form name="test" id="info_form">
+	<fieldset>
+		<ul>
+			<% @checkbox_labels.each do |power| %>
+				<li> <input type="checkbox" checked=true> <%= power %> </li>
+			<% end %>
+		<ul>
+		<input type="submit" value="提交">
+	</fieldset>
+</form>
+<%= @xxx.to_a %>
