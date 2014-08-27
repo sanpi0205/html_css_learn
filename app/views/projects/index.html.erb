@@ -1,3 +1,7 @@
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=fulYyTzPOK6ag6vksDMWdCf9"></script>
+<%= javascript_include_tag "baidu"%>
+<%= stylesheet_link_tag "projects" %>
+
 <h1>Listing projects</h1>
 
 <table>
@@ -38,3 +42,5 @@
 
 <%= link_to 'New Project', new_project_path %>
 <h3> <%= link_to 'energy project','/energy_project/info' %> </h3>
+
+<div id="allmap"></div>

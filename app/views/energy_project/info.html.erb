@@ -10,5 +10,7 @@
 	</fieldset>
 </form>
 <% @projects.each do |p| %>
-<p><%= p.location %></p>
+<p><%= p.title %></p>
 <% end %>
+
+<%= link_to 'energy_project','/energy_project/index' %>

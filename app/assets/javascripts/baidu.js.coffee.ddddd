@@ -1,0 +1,38 @@
+$ ->
+
+  hello "kitty"
+
+  addMarker = (point, icon) ->
+    myIcon = new BMap.Icon(icon, new BMap.Size(30, 20))
+    marker = new BMap.Marker(point,
+      icon: myIcon
+    )
+    map.addOverlay marker
+
+  map = new BMap.Map("allmap")
+  map.setMapStyle style: "grayscale"
+  point = new BMap.Point(111.665, 40.890)
+  map.centerAndZoom point, 6
+  map.enableScrollWheelZoom()
+  map.addControl new BMap.NavigationControl()
+  map.addControl new BMap.ScaleControl()
+  map.addControl new BMap.MapTypeControl()
+
+  bounds = map.getBounds()
+  sw = bounds.getSouthWest()
+  ne = bounds.getNorthEast()
+  lngSpan = Math.abs(sw.lng - ne.lng)
+  latSpan = Math.abs(ne.lat - sw.lat)
+  i = 0
+  
+
+
+  while i < 25
+    point = new BMap.Point(sw.lng + lngSpan * (Math.random() * 0.7), ne.lat - latSpan * (Math.random() * 0.7))
+    addMarker point, "<%= image_tag('coalpower.png') %>"
+    i++
+
+hello = (name) ->
+  alert "My name is #{name}"
+
+

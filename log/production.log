@@ -1,0 +1,102 @@
+I, [2014-08-26T00:02:48.755042 #6580]  INFO -- : Started GET "/projects" for 127.0.0.1 at 2014-08-26 00:02:48 +0800
+I, [2014-08-26T00:02:48.769259 #6580]  INFO -- : Processing by ProjectsController#index as HTML
+E, [2014-08-26T00:02:48.798547 #6580] ERROR -- : SQLite3::SQLException: no such table: projects: SELECT "projects".* FROM "projects"
+I, [2014-08-26T00:02:48.799469 #6580]  INFO -- :   Rendered projects/index.html.erb within layouts/application (3.7ms)
+I, [2014-08-26T00:02:48.799791 #6580]  INFO -- : Completed 500 Internal Server Error in 30ms
+F, [2014-08-26T00:02:48.802617 #6580] FATAL -- : 
+ActionView::Template::Error (SQLite3::SQLException: no such table: projects: SELECT "projects".* FROM "projects"):
+    20:   </thead>
+    21: 
+    22:   <tbody>
+    23:     <% @projects.each do |project| %>
+    24:       <tr>
+    25:         <td><%= project.title %></td>
+    26:         <td><%= project.capacity %></td>
+  app/views/projects/index.html.erb:23:in `_app_views_projects_index_html_erb___3486919743488922438_26824360'
+
+
+I, [2014-08-26T00:02:50.169130 #6580]  INFO -- : Started GET "/projects" for 127.0.0.1 at 2014-08-26 00:02:50 +0800
+I, [2014-08-26T00:02:50.171139 #6580]  INFO -- : Processing by ProjectsController#index as HTML
+E, [2014-08-26T00:02:50.173389 #6580] ERROR -- : SQLite3::SQLException: no such table: projects: SELECT "projects".* FROM "projects"
+I, [2014-08-26T00:02:50.174170 #6580]  INFO -- :   Rendered projects/index.html.erb within layouts/application (1.7ms)
+I, [2014-08-26T00:02:50.174370 #6580]  INFO -- : Completed 500 Internal Server Error in 3ms
+F, [2014-08-26T00:02:50.176599 #6580] FATAL -- : 
+ActionView::Template::Error (SQLite3::SQLException: no such table: projects: SELECT "projects".* FROM "projects"):
+    20:   </thead>
+    21: 
+    22:   <tbody>
+    23:     <% @projects.each do |project| %>
+    24:       <tr>
+    25:         <td><%= project.title %></td>
+    26:         <td><%= project.capacity %></td>
+  app/views/projects/index.html.erb:23:in `_app_views_projects_index_html_erb___3486919743488922438_26824360'
+
+
+I, [2014-08-26T00:03:21.804090 #6587]  INFO -- : Started GET "/projects" for 127.0.0.1 at 2014-08-26 00:03:21 +0800
+I, [2014-08-26T00:03:21.815254 #6587]  INFO -- : Processing by ProjectsController#index as HTML
+E, [2014-08-26T00:03:21.842191 #6587] ERROR -- : SQLite3::SQLException: no such table: projects: SELECT "projects".* FROM "projects"
+I, [2014-08-26T00:03:21.843118 #6587]  INFO -- :   Rendered projects/index.html.erb within layouts/application (3.5ms)
+I, [2014-08-26T00:03:21.843395 #6587]  INFO -- : Completed 500 Internal Server Error in 28ms
+F, [2014-08-26T00:03:21.846115 #6587] FATAL -- : 
+ActionView::Template::Error (SQLite3::SQLException: no such table: projects: SELECT "projects".* FROM "projects"):
+    20:   </thead>
+    21: 
+    22:   <tbody>
+    23:     <% @projects.each do |project| %>
+    24:       <tr>
+    25:         <td><%= project.title %></td>
+    26:         <td><%= project.capacity %></td>
+  app/views/projects/index.html.erb:23:in `_app_views_projects_index_html_erb___3124049799950970441_43146040'
+
+
+I, [2014-08-26T00:03:22.698082 #6587]  INFO -- : Started GET "/projects" for 127.0.0.1 at 2014-08-26 00:03:22 +0800
+I, [2014-08-26T00:03:22.701599 #6587]  INFO -- : Processing by ProjectsController#index as HTML
+E, [2014-08-26T00:03:22.705615 #6587] ERROR -- : SQLite3::SQLException: no such table: projects: SELECT "projects".* FROM "projects"
+I, [2014-08-26T00:03:22.707049 #6587]  INFO -- :   Rendered projects/index.html.erb within layouts/application (3.1ms)
+I, [2014-08-26T00:03:22.707426 #6587]  INFO -- : Completed 500 Internal Server Error in 6ms
+F, [2014-08-26T00:03:22.711604 #6587] FATAL -- : 
+ActionView::Template::Error (SQLite3::SQLException: no such table: projects: SELECT "projects".* FROM "projects"):
+    20:   </thead>
+    21: 
+    22:   <tbody>
+    23:     <% @projects.each do |project| %>
+    24:       <tr>
+    25:         <td><%= project.title %></td>
+    26:         <td><%= project.capacity %></td>
+  app/views/projects/index.html.erb:23:in `_app_views_projects_index_html_erb___3124049799950970441_43146040'
+
+
+I, [2014-08-26T00:03:23.088649 #6587]  INFO -- : Started GET "/projects" for 127.0.0.1 at 2014-08-26 00:03:23 +0800
+I, [2014-08-26T00:03:23.090630 #6587]  INFO -- : Processing by ProjectsController#index as HTML
+E, [2014-08-26T00:03:23.093787 #6587] ERROR -- : SQLite3::SQLException: no such table: projects: SELECT "projects".* FROM "projects"
+I, [2014-08-26T00:03:23.095107 #6587]  INFO -- :   Rendered projects/index.html.erb within layouts/application (2.7ms)
+I, [2014-08-26T00:03:23.095444 #6587]  INFO -- : Completed 500 Internal Server Error in 4ms
+F, [2014-08-26T00:03:23.101181 #6587] FATAL -- : 
+ActionView::Template::Error (SQLite3::SQLException: no such table: projects: SELECT "projects".* FROM "projects"):
+    20:   </thead>
+    21: 
+    22:   <tbody>
+    23:     <% @projects.each do |project| %>
+    24:       <tr>
+    25:         <td><%= project.title %></td>
+    26:         <td><%= project.capacity %></td>
+  app/views/projects/index.html.erb:23:in `_app_views_projects_index_html_erb___3124049799950970441_43146040'
+
+
+I, [2014-08-26T00:03:23.245342 #6587]  INFO -- : Started GET "/projects" for 127.0.0.1 at 2014-08-26 00:03:23 +0800
+I, [2014-08-26T00:03:23.247068 #6587]  INFO -- : Processing by ProjectsController#index as HTML
+E, [2014-08-26T00:03:23.250484 #6587] ERROR -- : SQLite3::SQLException: no such table: projects: SELECT "projects".* FROM "projects"
+I, [2014-08-26T00:03:23.251810 #6587]  INFO -- :   Rendered projects/index.html.erb within layouts/application (2.6ms)
+I, [2014-08-26T00:03:23.252151 #6587]  INFO -- : Completed 500 Internal Server Error in 5ms
+F, [2014-08-26T00:03:23.255069 #6587] FATAL -- : 
+ActionView::Template::Error (SQLite3::SQLException: no such table: projects: SELECT "projects".* FROM "projects"):
+    20:   </thead>
+    21: 
+    22:   <tbody>
+    23:     <% @projects.each do |project| %>
+    24:       <tr>
+    25:         <td><%= project.title %></td>
+    26:         <td><%= project.capacity %></td>
+  app/views/projects/index.html.erb:23:in `_app_views_projects_index_html_erb___3124049799950970441_43146040'
+
+

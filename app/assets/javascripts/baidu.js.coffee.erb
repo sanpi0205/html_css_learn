@@ -1,0 +1,38 @@
+$ =>
+
+  @map = new BMap.Map("allmap")
+  @map.setMapStyle style: "grayscale"
+  point = new BMap.Point(111.665, 40.890)
+  @map.centerAndZoom point, 7
+  @map.enableScrollWheelZoom()
+  @map.addControl new BMap.NavigationControl()
+  @map.addControl new BMap.ScaleControl()
+  @map.addControl new BMap.MapTypeControl()
+
+  $.getJSON "projects", (data) ->
+    update data
+
+addMarker = (project, icon) ->
+  point = new BMap.Point(project.longitude, project.latitude)
+  myIcon = new BMap.Icon(icon, new BMap.Size(30, 20))
+  marker = new BMap.Marker(point, icon: myIcon)
+  @map.addOverlay marker
+  
+  info_window = new BMap.InfoWindow "电厂名称: #{project.title} <br/> 装机容量: #{project.capacity}"
+  marker.addEventListener "mouseover", ->
+    @openInfoWindow info_window
+
+  marker.addEventListener "mouseout", ->
+    @closeInfoWindow info_window
+
+update = (projects_data) ->
+  len = projects_data.length
+  i = 0
+  while i < len
+    project = projects_data[i]    
+    switch project.power_category
+      when "煤炭发电" then addMarker project, "<%= image_path('coalpower.png') %>"
+      when "陆上风电" then addMarker project, "<%= image_path('wind.png') %>"
+    i++
+  
+
